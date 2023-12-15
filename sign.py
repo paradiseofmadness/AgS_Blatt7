@@ -3,7 +3,7 @@ def sign(sigma):
   for i in sigma[0]:
     for j in sigma[0]:
       if i<j:
-        res += (sigma[1][sigma[0].index(i)]-sigma[1][sigma[0].index(j)])/(i-j)
+        res *= (sigma[1][sigma[0].index(i)]-sigma[1][sigma[0].index(j)])/(i-j)
   return res
 
 # aus 4.a)
